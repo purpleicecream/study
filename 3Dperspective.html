@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D透视</title>
+    <style>
+        #div1
+        {
+            position: relative;
+            height: 260px;
+            width:200px;
+            margin:222px;
+            padding:20px;
+            border:1px solid white;
+            perspective:150px;
+            -webkit-perspective:300px;
+            perspective-origin:20% 50%;
+            -webkit-perspective-origin:40% 50%;
+        }
+
+        #div2
+        {
+            padding:100px 100px 155px 80px;
+            border:1px solid orangered;
+            /*background-color:yellow;*/
+/*
+            -webkit-backface-visibility:hidden;
+*/
+            color:red;
+            text-align: right;
+            background-image:url(./photo/pan.jpg);
+            background-size:198px  256px;
+            background-repeat: no-repeat;
+            box-shadow: 3px 3px 3px lime;
+            transform:rotateX(45deg);
+            -webkit-transform:rotateX(45deg) rotateY(-45deg);
+            transition:width 2s, height 2s;
+            -moz-transition:width 2s, height 2s, -moz-transform 2s; /* Firefox 4 */
+            -webkit-transition:width 5s, height 5s, -webkit-transform 5s; /* Safari and Chrome */
+            -o-transition:width 2s, height 2s, -o-transform 2s; /* Opera */
+        }
+
+        #div2:hover
+        {
+            transform:rotateX(180deg) rotateY(180deg);
+            -moz-transform: rotateX(180deg) rotateY(180deg);
+            -webkit-transform: rotateX(360deg) rotateY(360deg);
+            -o-transform: rotateX(180deg) rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+
+<div id = "div1">
+    <div id = "div2"><img src = ""></div>
+</div>
+
+</body>
+</html>

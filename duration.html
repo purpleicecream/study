@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>延迟</title>
+    <style>
+        div
+        {
+            width:100px;
+            height:100px;
+            background:lime;
+            transition-property:width;
+            transition-duration:5s;
+            transition-delay:2s;
+
+            /*Firefox 4*/
+            -moz-transition-property:width;
+            -moz-transition-duration:5s;
+            -moz-transition-delay:2s;
+            /*Opera*/
+            -o-transition-property:width;
+            -o-transition-duration:5s;
+            -o-transition-delay:2s;
+        }
+
+        div:hover
+        {
+            width:300px;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<p>请把鼠标指针移动到蓝色的div元素上，就可以看到过度效果。</p>
+<p><b>注释：</b>过度先哦过会再开始前等待两秒钟。</p>
+<p><b>注释：</b>本例在Internet Explorer中无效</p>
+</body>
+</html>

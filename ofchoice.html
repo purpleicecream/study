@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        p[class ~= "important"]
+        {
+            color:red;
+        }
+
+        h1 > strong { color:red; }
+    </style>
+</head>
+
+<body>
+<h1>可以应用样式：</h1>
+<p class = "important warning">This is a paragraph</p>
+<p class = "important">This is a paragraph</p>
+
+<hr/>
+<h1>无法这样应用</h1>
+<p class = "waening">This is a paragraph<./p>
+<h1>This is <strong>very</strong> <strong>very</strong> important.</h1>
+<h1>This is <em>really <strong>very</strong></em> important.</h1>
+</body>
+</html>

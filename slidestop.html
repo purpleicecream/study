@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>停止滑动</title>
+    <script src = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script type = "text/javascript" src = "slidestop.js"></script>
+    <style type = "text/css">
+        #panel, #flip
+        {
+            padding:5px;
+            text-align:center;
+            background-color: lime;
+            border:solid 1px #c3c3c3;
+        }
+        #panel
+        {
+            padding:500px;
+            background-image:  url( "./photo/pan.jpg" );
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display:none;
+        }
+    </style>
+</head>
+
+<body>
+<button id = "stop">Stop</button>
+<div id = "flip">Click here</div>
+<div id = "panel"></div>
+</body>
+</html>

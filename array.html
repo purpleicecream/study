@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+
+<script>
+    var i;
+    var car = new Array();
+    car[0] = "Audi";
+    car[1] = "BMW";
+    car[2] = "Volvo";
+
+    for( i = 0; i < car.length; i++ ){
+        document.write( car[i] + "<br>");
+    }
+
+    var person = {
+        fisrtname : "yang",
+        lastname : "yu",
+        age :18
+    };
+
+    document.write( person.lastname + "<br>" );
+    document.write( person["lastname"] + "<br>" );
+
+</script>
+
+</body>
+</html>

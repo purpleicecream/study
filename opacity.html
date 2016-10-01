@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>带字图</title>
+    <style>
+        div.background
+        {
+            width:600px;
+            height:480px;
+            margin:15px;
+            background:url(./photo/behappy.jpg) no-repeat;
+            border:1px solid black;
+        }
+
+        div.transbox
+        {
+            width:400px;
+            height:320px;
+            margin:30px;
+            padding:0;
+            background-color: #ffffff;
+            border:1px solid black;
+            filter:alpha(opacity=60);
+            opacity:0.6;
+        }
+
+        div.transbox p
+        {
+            margin:30px 40px;
+            color:mediumvioletred;
+            font:bold 12px Verdana, Geneva, sans-serif;
+            line-height:1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class = "background">
+    <div class = "transbox">
+        <p>
+            This is some text that is placed in the transparent box.
+            This is some text that is placed in the transparent box.
+            This is some text that is placed in the transparent box.
+            This is some text that is placed in the transparent box.
+            This is some text that is placed in the transparent box.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

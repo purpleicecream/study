@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D旋转</title>
+    <style>
+        div
+        {
+            border:1px solid orangered;
+            margin:50px;
+            width:300px;
+            height:400px;
+            background-image:url("./photo/pan.jpg");
+            background-size: 100% 100%;
+            background-repeat:no-repeat;
+            background-origin:content-box;
+            box-shadow:5px 5px 5px lime;
+            /*rotate div */
+            transform:rotate(9deg) translate(200px,100px) skew(30deg 20deg) ;
+            -ms-transform:rotate(9deg) translate(200px,100px) skew(30deg 20deg); /* Internet Explorer */
+            -moz-transform:rotate(9deg) translate(200px,100px) skew(30deg 20deg); /* Firefox */
+            -webkit-transform: rotate(9deg) translate(400px,100px) skew(-25deg,-20deg); /* Safari 和 Chrome */
+            -o-transform:rotate(9deg) translate(200px,100px) skew(30deg 20deg); /* Opera */
+            -webkit-transform-origin:20% 40%;
+        }
+    </style>
+</head>
+<body>
+<div>hello! 好久不见</div>
+</body>
+</html>

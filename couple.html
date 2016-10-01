@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象</title>
+</head>
+<body>
+
+<script>
+    function person( firstname, lastname, age, eyecolor){
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.age = age;
+        this.eyecolor = eyecolor;
+
+        this.changeName = changeName;
+
+        function changeName(name){
+            this.lastname = name;
+        }
+    }
+    x = new person(1,2,3,4);
+    document.write( x.firstname + " is " + x.age + " year old"  + "</br>" );
+    x.changeName( "blii" );
+    document.write( x.lastname );
+
+</script>
+
+ <!--   x1 = new person1(1, 2, 3, 4); -->
+<p>点击下面的按钮，循环遍历对象person的属性</p>
+<button type = "button" onclick = "check()">查看person属性</button>
+<p id = "here"></p>
+
+<script>
+    function check(){
+        var x;
+        txt = "";
+        var person = { fname:"Bill", lname:"Gates", age:56, eyecolor:"blue" };
+
+        for( x in person ){
+            txt = txt + person[x];
+
+        }
+        //document.write( txt );
+        document.getElementById( "here" ).innerHTML = txt;
+
+    }
+</script>
+
+
+</body>
+</html>

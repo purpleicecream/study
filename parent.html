@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父元素</title>
+    <script src = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script type = "text/javascript"  src = "parent.js"></script>
+    <style>
+        .ancestors *
+        {
+            display:block;
+            border:2px solid lime;
+            color:purple;
+            padding:5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class = "ancestors">
+    <div style = "width: 500px;">div曾祖父
+        <ul>ul 祖父
+            <li>li 直接父
+                <span>span</span>
+            </li>
+        </ul>
+    </div>
+
+
+    <div style="width:500px;">div (祖父)
+        <p>p (直接父)
+            <span>span</span>
+        </p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图边框</title>
+    <style>
+        div{
+            border:15px;
+            width:300px;
+            padding:10px 20px;
+        }
+
+        #round
+        {
+            -moz-border-image:url('./photo/behappy.jpg') 20 20 round;/*old Firefox*/
+            -webkit-border-image:url('./photo/behappy.jpg') 20 20 round;/*Safari an Chrome*/
+            -o-border-image:url('./photo/behappy.jpg') 20 20 round;/*Opera*/
+            border-image:url('./photo/behappy.jpg') 20 20 round;
+        }
+
+        #stretch
+        {
+            -moz-border-image:url('./photo/behappy.jpg') 20 20 stretch;/*old Firefox*/
+            -webkit-border-image:url('./photo/behappy.jpg') 20 20 stretch;/*Safari an Chrome*/
+            -o-border-image:url('./photo/behappy.jpg') 20 20 stretch;/*Opera*/
+            border-image:url('./photo/behappy.jpg') 20 20 stretch;
+        }
+    </style>
+</head>
+
+<body>
+<div id = "round">在这里，图片铺满整个边框很多字很多字很多字很多字很多字很多字  还与很多字还有很多字</div>
+<br/>
+<div id = "stretch">在这里，图片被拉伸一天冲该区域</div>
+
+<p>这是我们使用的图片：</p>
+<img src = "./photo/behappy.jpg">
+
+<p><b>注释：</b>Internet Explorer不知持border-image属性</p>
+<p>border-image 属性规定了用作边框的图片</p>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浏览器窗口</title>
+</head>
+<body>
+
+<P id = "win"></P>
+
+<script>
+    var w = window.innerWidth
+    || document.doucumentElement.clientWidth
+    || document.body.clientWidth;
+
+    var h = window.innerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
+
+    x = document.getElementById("win");
+    x.innerHTML = "浏览器的内部窗口宽度：" + w + ",高度：" + h + "。";
+
+    document.write( "可用宽度：" + screen.availWidth  + "，可用高度：" + screen.availHeight + "<br>" );
+
+    document.write( "web主机的域名：" + location.hostname + "<br>" );
+
+    document.write( "当前页面的路径和文件名：" + location.pathname + "<br>" );
+
+    document.write( "web主机的端口：" + location.port + "<br>" );
+    document.write( "所使用的协议：" + location.protocol + "<br>" );
+    document.write( "当前页面的URL：" + location.href + "<br>" );
+
+</script>
+
+<script>
+    function newDoc(){
+        window.location.assign( "http://www.w3school.com.cn" );
+    }
+
+</script>
+
+<input type = "button" value = "加载新文档" onclick = "newDoc()">
+
+<script>
+    function goBack(){
+        window.history.back();
+    }
+</script>
+
+<p> <input type = "button" value = "Back" onclick = "goBack()"> </p>
+
+
+<script>
+    function goForward(){
+        window.history.forward();
+    }
+</script>
+
+<input type = "button" value = "Forward" onclick = "goForward()">
+
+</body>
+</html>

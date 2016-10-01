@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></title>
+    <title>鼠标事件
+</head>
+<body>
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" style = "background-color:greenyellow;
+width: 120px;height: 20px;padding:40px;color:#ffffff;">把手放到上面</div>
+
+<script>
+    function mOver(obj){
+        obj.innerHTML = "拿开你的手"
+    }
+    function mOut(obj){
+        obj.innerHTML = "我错了，你不要怕啦"
+    }
+</script>
+
+
+<div onmousedown = "mDown( this )" onmouseup = "mUp( this )" style = "background-color: lawngreen;
+     color:#FFFFFF; width:90px; height:20px; padding:40px;font-size:12px;">来吧宝贝</div>
+
+<script>
+    function mDown(obj){
+        obj.style.backgroundColor = "greenyellow";
+        obj.innerHTML = "你给我滚";
+    }
+    function mUp(obj){
+        obj.style.backgroundColor = "red";
+        obj.innerHTML = "来吧宝贝";
+    }
+</script>
+
+</body>
+</html>

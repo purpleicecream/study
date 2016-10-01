@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>girlfriend</title>
+</head>
+<body>
+
+<script>
+    function showColor(){
+        document.write( this.color );
+    }
+
+    function createCar( sColor, iDoors, iMpg){
+        var oTempCar = new Object;
+        oTempCar.color = sColor;
+        oTempCar.doors = iDoors;
+        oTempCar.mpg = iMpg;
+        oTempCar.showColor = showColor;
+        return oTempCar;
+    }
+
+    var oCar1 = createCar( "red", 4, 23 );
+    var oCar2 = createCar( "blue", 3, 25 );
+
+    oCar1.showColor();
+    document.write( "<br/>" );
+    oCar2.showColor();
+
+</script>
+
+
+<script>
+
+    function Car( sColor, iDoors, iMpg ){
+        this.color = "sColor";
+        this.doors = "sDoors";
+        this.mpg = "iMpg";
+        this.drivers = new Array( "Mike", "John" );
+    }
+
+    Car.prototype.showColor = function(){
+        document.write( this.color );
+    };
+
+    var oCar1 = new Car( "red", 4, 23 );
+    var oCar2 = new Car( "blue", 3, 25 );
+
+    oCar1.drivers.push( "Bill" );
+
+    document.write( oCar1.drivers );
+    document.write( "<br />" );
+    document.write( oCar2.drivers );
+
+</script>
+
+
+
+</body>
+</html>

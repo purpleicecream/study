@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>循环动画</title>
+    <style>
+        div
+        {
+            width:100px;
+            height:100px;
+            background:red;
+            position:relative;
+            animation:mymove 5s infinite;
+            -webkit-animation:mymove 5s infinite alternate;
+        }
+
+        @keyframes mymove{
+            from { left: 0; background:red}
+            to { left: 200px; background-color:lime; }
+        }
+
+        @-webkit-keyframes mymove /*Safari and Chrome*/
+        {
+            from { left: 0; background:red}
+            to { left: 200px; background-color:lime; }
+        }
+    </style>
+</head>
+<body>
+<p><strong>注释：</strong>Internet Explorer 9 以及更早的版本不支持 animation 属性。</p>
+<div></div>
+</body>
+</html>

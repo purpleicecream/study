@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片库</title>
+    <style>
+        div.img
+        {
+            margin:3px;
+            border: 5px solid lime;
+            height:auto;
+            width:auto;
+            float:left;
+            text-align:center;
+        }
+
+        div.img img
+        {
+            display:inline;
+            margin:3px;
+            border:1px solid lime;
+        }
+
+        div.img a:hover img
+        {
+            border:1px solid lime;
+        }
+
+        div.desc
+        {
+            text-align:center;
+            font-weight: normal;
+            width:150px;
+            font-size:12px;
+            margin:10px 5px 10px 5px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+<div class = "img">
+    <a target = "_blank" href = "./photo/behappy.jpg">
+        <img src = "./photo/behappy.jpg" alt = "Ballade" width = "160" height = "160">
+    </a>
+    <div class = "desc">在此处添加对图像的描述</div>
+</div>
+
+<div class = "img">
+    <a target = "_blank" href = "./photo/behappy.jpg">
+        <img src = "./photo/behappy.jpg" alt = Ballade" width = "160" height = "160">
+    </a>
+    <div class = "desc">在此处添加对图像的描述</div>
+</div>
+
+<div class = "img">
+    <a target = "_blank" href = "./photo/behappy.jpg">
+        <img src = "./photo/behappy.jpg" alt = "ballade" width = "160" height = "160">
+    </a>
+    <div class = "desc">在此处添加图像的描述</div>
+</div>
+
+<div class = img>
+    <a target = "_blank" href = "./photo/behappy.jpg" >
+        <img src = "./photo/behappy.jpg" alt = "Ballade" width = "160" height = "160">
+    </a>
+    <div class = "desc">在此处添加对图像的描述</div>
+</div>
+</body>
+</html>

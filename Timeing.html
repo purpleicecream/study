@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timeing</title>
+
+    <script>
+        var c = 0;
+        var t;
+        function timedCount(){
+            t = setTimeout( function(){
+                document.getElementById( "txt" ).value = c.toFixed(1);
+                timedCount();
+            }, 100 )
+            var num = 0.1;
+            c = c + num;
+        }
+
+        function stopCount(){
+            var t1 = setTimeout( function(){
+                //c = 0;
+                document.getElementById( "txt" ).value = 0
+            }, 0 );
+            clearTimeout(t);
+        }
+    </script>
+
+</head>
+<body onload = "startTime()">
+<input type = "button" value = "开始计时！" onclick = "timedCount()">
+<input type = "text" id = "txt">
+<input type = "button" value = "结束计时！" onclick = "stopCount()">
+
+<script>
+    function startTime(){
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        var t = setTimeout( function(){
+            document.getElementById("txt1").innerHTML = h + ":" + m + ":" + s;
+            startTime();
+        },500)
+    }
+
+    function checkTime( c ){
+        if( c < 10 )
+                return "0" + c;
+        return c;
+    }
+
+</script>
+
+<div id = "txt1"></div>
+
+</body>
+</html>

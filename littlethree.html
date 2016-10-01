@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LittleThree</title>
+</head>
+<body>
+
+<script>
+    Number.prototype.toHexString = function(){
+        return this.toString(16);
+    }
+
+    var iNum = 15;
+    document.write( iNum.toHexString() );
+
+</script>
+
+<script>
+    Array.prototype.enqueue = function( vItem ){
+        this.push( vItem );
+    };
+
+    Array.prototype.dequeue = function(){
+        return this.shift();
+    }
+
+    var arr = new Array(3);
+    arr[0] = "George";
+    arr[1] = "John";
+    arr[2] = "Thomas" ;
+
+    arr.enqueue( "Bill" );
+    document.write( arr );
+
+    document.write( "<br/>");
+
+    arr.dequeue();
+    document.write( arr );
+
+</script>
+
+<script>
+    Array.prototype.indexOf = function(vItem){
+        for (var i = 0; i < this.length; i++ ){
+            if( vItem == this[i] ){
+                return i;
+            }
+        }
+    }
+
+    var aColors = new Array( "red", "green", "blue" );
+    document.write( aColors.indexOf("green") );
+</script>
+
+<script>
+    Object.prototype.showValue = function(){
+        document.write(this.valueOf());
+    }
+
+    var str = "hello";
+    var iNum = 25;
+
+    str.showValue();
+    iNum.showValue();
+</script>
+
+
+<script>
+    function ClassA(){
+
+    }
+    ClassA.prototype.color = "red";
+    ClassA.prototype.sayColor = function(){
+        alert(this.color);
+    };
+
+    function ClassB(){
+
+    }
+    ClassB.prototype = new ClassA();
+    ClassB.prototype.name = "";
+    ClassB.prototype.sayName = function(){
+        alert( this.name );
+    };
+
+    var objA = new ClassA();
+    var objB = new ClassB();
+    objA.color = "blue";
+    objB.color = "red";
+    objB.name = "John";
+    objA.sayColor();
+    objB.sayColor();
+    objB.sayName();
+
+
+</script>
+
+
+</body>
+</html>

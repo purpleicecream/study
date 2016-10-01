@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype</title>
+
+    <script src = "//cdn.bootcss.com/jquery/3.1.0/prototype.js"></script>
+
+    <script>
+        function myFunction(){
+            $("#h01").insert( "Hello Prototype" );
+        }
+        Event.observe( window, "load", myFunction );
+    </script>
+
+</head>
+<body>
+<h1 id = "h01"></h1>
+</body>
+</html>

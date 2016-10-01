@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三维动画</title>
+    <style>
+        div
+        {
+            padding-left: 150px;;
+            animation:myfirst 6s 2s infinite alternate;
+            -moz-animation: myfirst 6s 2s infinite alternate;
+            -webkit-animation: myfirst 6s 2s infinite alternate;
+            -o-animation: myfirst 6s 2s infinite alternate;
+        }
+
+        .div1
+        {
+            width:200px;
+            height:200px;
+            position: relative;
+            background-image: url("./photo/pan.jpg");
+            background-size: 100% 100%;
+            opacity: 0.5;
+
+        }
+
+        .div2
+        {
+            width:200px;
+            height:200px;
+            position: relative;
+            background-image: url("./photo/pan1.jpg");
+            background-size: 100% 100%;
+            perspective: -200px;
+            -webkit-perspective: -200px;
+            perspective-origin: 0 0;
+            -webkit-perspective-origin: 0 0;
+            transform:rotateX(90deg);
+            -moz-transform:rotateX(90deg); /* Firefox 4 */
+            -webkit-transform:rotateX(90deg) rotateY(180deg); /* Safari and Chrome */
+            -o-transform:rotateX(90deg); /* Opera */
+        }
+/*
+        .div3
+        {
+            width:200px;
+            height:200px;
+            position: relative;
+            background-image: url("./photo/pan2.jpg");
+            background-size: 100% 100%;
+            transform:rotateX(-90deg);
+            -moz-transform:rotateX(-90deg); !* Firefox 4 *!
+            -webkit-transform:rotateX(-90deg) rotateY(180deg); !* Safari and Chrome *!
+            -o-transform:rotateX(-90deg); !* Opera *!
+        }*/
+
+        .div4
+        {
+            width:200px;
+            height:200px;
+            position:absolute;
+            background-image: url("./photo/pan3.jpg");
+            background-size: 100% 100%;
+            background-position: top left;
+            perspective: -200px;
+            -webkit-perspective: -200px;
+            perspective-origin: 100% 100%;
+            -webkit-perspective-origin: 100% 100%;
+            transform:rotateX(180deg);
+            -moz-transform:rotateX(180deg); /* Firefox 4 */
+            -webkit-transform:rotateX(180deg) rotateY(180deg); /* Safari and Chrome */
+            -o-transform:rotateX(180deg); /* Opera */
+
+        }
+
+ /*       .div5
+        {
+            width:200px;
+            height:200px;
+            position: relative;
+            background-image: url("./photo/pan4.jpg");
+            background-size: 100% 100%;
+            transform:rotateZ(90deg);
+            -moz-transform:rotateZ(90deg); !* Firefox 4 *!
+            -webkit-transform:rotateZ(90deg) rotateY(180deg); !* Safari and Chrome *!
+            -o-transform:rotateZ(90deg); !* Opera *!
+        }*/
+/*
+        .div6
+        {
+            width:200px;
+            height:200px;
+            position: relative;
+            background-image: url("./photo/pan5.jpg");
+            background-size: 100% 100%;
+            transform:rotateX(-90deg);
+            -moz-transform:rotateX(-90deg); !* Firefox 4 *!
+            -webkit-transform:rotateX(-90deg) rotateY(180deg); !* Safari and Chrome *!
+            -o-transform:rotateX(-90deg); !* Opera *!
+        }*/
+    </style>
+</head>
+<body>
+<div>
+    <div class = "div1"></div>    <div class = "div2"></div>    <div class = "div3"></div>
+    <div class = "div4"></div>    <div class = "div5"></div>    <div class = "div6"></div>
+</div>
+</body>
+</html>

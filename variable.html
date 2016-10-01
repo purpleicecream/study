@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var x = 2;
+    var y = 3;
+    var z = x + y;
+    document.write( x + "<br>" );
+    document.write( y + "<br>" );
+    document.write( z + "<br>" );
+
+    var pi = 3.14;
+    var name = "Bill Gates";
+    var answer = "Yes";
+
+    document.write( pi + "<br> ");
+    document.write( name + "<br>" );
+    document.write( answer + "<br>" );
+
+    function createVar(){
+        var carname = "Volvo";
+        document.getElementById( "car" ).innerHTML = carname;
+    }
+
+
+
+    function myFunction()
+    {
+        var y=5;
+        var x=y+2;
+        var demoP=document.getElementById("demo")
+        demoP.innerHTML="x=" + x;
+    }
+
+</script>
+
+<p>  点击这里来创建变量，并显示结果。</p>
+<p id = "car"> </p>
+<button onclick = "createVar()">点击这里</button>
+<p id = "demo"> </p>
+<p>假设y=5，计算x=y+2，并显示结果。</p>
+<button onclick = "myFunction()">计算</button>
+</body>
+</html>

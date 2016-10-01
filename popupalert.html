@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popupalert</title>
+
+    <script>
+        function disp_alert(){
+            alert( "警告\n警告！" )
+        }
+    </script>
+
+    <script>
+        function show_confirm(){
+            var r = confirm( "press a button" );
+            if( r == true ){
+                alert( "You pressed OK!" );
+            }
+            else{
+                alert( "You pressed cancel!" );
+            }
+        }
+    </script>
+
+    <script>
+        function disp_prompt(){
+            var name = prompt( "请输入您的名字" );
+            if( name != null && name != "" ){
+                confirm( "输入成功" );
+            }else{
+                alert( "输入内容太不能为空" );
+                disp_prompt();
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+<p> <input type = "button" value = "Fire" onclick = "disp_alert()" /> </p>
+
+<p> <input type = "button" value = "fire" onclick = "show_confirm()" /> </p>
+
+<p> <input type = "button" value = "点击输入" onclick = "disp_prompt()" /> </p>
+
+</body>
+</html>

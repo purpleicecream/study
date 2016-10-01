@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多个动画效果</title>
+    <style>
+        div
+        {
+            width:384px;
+            height:512px;
+            background-image: url("./photo/xin.jpg");
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+            position:relative;
+            animation:myfirst 11s;
+            -moz-animation: myfirst 11s;
+            -webkit-animation: myfirst 11s;
+            -o-animation: myfirst 11s;
+            animation-iteration-count:infinite;
+            animation-direction:alternate;
+            animation-play-state:running;
+        }
+
+        @keyframes myfirst
+        {
+            0%  { background-image: url("./photo/xin.jpg"); }
+            10% { background-image: url("./photo/pan1.jpg"); }
+            20% { background-image: url("./photo/pan2.jpg"); }
+            30% { background-image: url("./photo/pan3.jpg"); }
+            40% { background-image: url("./photo/pan4.jpg"); }
+            50% { background-image: url("./photo/pan5.jpg"); }
+            60% { background-image: url("./photo/pan6.jpg"); }
+            70% { background-image: url("./photo/pan7.jpg"); }
+            80% { background-image: url("./photo/pan8.jpg"); }
+            90% { background-image: url("./photo/pan.jpg"); }
+            100% { background-image: url("./photo/behappy.jpg"); }
+        }
+
+        @-moz-keyframes myfirst {
+            0%  { background-image: url("./photo/xin.jpg"); }
+            10% { background-image: url("./photo/pan1.jpg"); }
+            20% { background-image: url("./photo/pan2.jpg"); }
+            30% { background-image: url("./photo/pan3.jpg"); }
+            40% { background-image: url("./photo/pan4.jpg"); }
+            50% { background-image: url("./photo/pan5.jpg"); }
+            60% { background-image: url("./photo/pan6.jpg"); }
+            70% { background-image: url("./photo/pan7.jpg"); }
+            80% { background-image: url("./photo/pan8.jpg"); }
+            90% { background-image: url("./photo/pan.jpg"); }
+            100% { background-image: url("./photo/behappy.jpg"); }
+
+        }
+
+        @-webkit-keyframes myfirst {
+            0%  { background-image: url("./photo/xin.jpg"); }
+            10% { background-image: url("./photo/pan1.jpg"); }
+            20% { background-image: url("./photo/pan2.jpg"); }
+            30% { background-image: url("./photo/pan3.jpg"); }
+            40% { background-image: url("./photo/pan4.jpg"); }
+            50% { background-image: url("./photo/pan5.jpg"); }
+            60% { background-image: url("./photo/pan6.jpg"); }
+            70% { background-image: url("./photo/pan7.jpg"); }
+            80% { background-image: url("./photo/pan8.jpg"); }
+            90% { background-image: url("./photo/pan.jpg"); }
+            100% { background-image: url("./photo/behappy.jpg"); }
+        }
+
+        @-o-keyframes myfirst {
+            0%  { background-image: url("./photo/xin.jpg"); }
+            10% { background-image: url("./photo/pan1.jpg"); }
+            20% { background-image: url("./photo/pan2.jpg"); }
+            30% { background-image: url("./photo/pan3.jpg"); }
+            40% { background-image: url("./photo/pan4.jpg"); }
+            50% { background-image: url("./photo/pan5.jpg"); }
+            60% { background-image: url("./photo/pan6.jpg"); }
+            70% { background-image: url("./photo/pan7.jpg"); }
+            80% { background-image: url("./photo/pan8.jpg"); }
+            90% { background-image: url("./photo/pan.jpg"); }
+            100% { background-image: url("./photo/behappy.jpg"); }
+        }
+
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
